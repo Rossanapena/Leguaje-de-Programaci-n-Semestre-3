@@ -50,9 +50,18 @@ class SistemaTeleVentas:
             print(f"📦 {nuevo_envio}")
         self.ordenes_confirmadas.clear()
 
+    def consultar_producto_especifico(self, codigo: str) -> None:
+        prod = next((p for p in self.catalogo if p.codigo == codigo), None)
+        if prod:
+            print(f"\n🔍 Información de producto: {prod.descripcion}")
+            print(f"   Precio: ${prod.precio} | Disponible: {prod.cantidad}")
+        else:
+            print(f"❌ El código {codigo} no existe en el catálogo.")
+
 if __name__ == "__main__":
     app = SistemaTeleVentas()
     app.enviar_catalogo_correo("rossana@mail.com")
+    app.consultar_producto_especifico("P002")
     app.ingresar_orden("Ross_Pena", [("P002", 2)])
     app.presentar_queja("Ross_Pena", "El sistema de pago demoró en cargar.")
     app.procesar_logistica()
