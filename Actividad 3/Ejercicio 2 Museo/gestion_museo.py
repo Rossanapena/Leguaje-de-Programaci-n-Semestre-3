@@ -21,7 +21,7 @@ class GestionMuseo:
             "fin": None
         }
         obra.historial_restauraciones.append(registro)
-        print(f"🛠️ Obra '{obra.titulo}' enviada a restauración ({tipo}).")
+        print(f"Obra '{obra.titulo}' enviada a restauración ({tipo}).")
 
     # --- Requerimiento: Gestión de Cesiones y Colas ---
     def ceder_obra(self, obra: ObraArte, museo_destino: str, importe: float, dias: int) -> None:
@@ -32,11 +32,11 @@ class GestionMuseo:
             print(f"⏳ La obra '{obra.titulo}' ya está cedida. {museo_destino} añadido a lista de espera.")
         else:
             obra.estado = "Cedida"
-            print(f"🏛️ Obra '{obra.titulo}' cedida a {museo_destino} por ${importe} ({dias} días).")
+            print(f"Obra '{obra.titulo}' cedida a {museo_destino} por ${importe} ({dias} días).")
 
     # --- Requerimiento: Consulta Restaurador Jefe (Ordenada) ---
     def consultar_historial_obra(self, obra: ObraArte) -> None:
-        print(f"\n📜 Historial de restauraciones de: {obra.titulo}")
+        print(f"\nHistorial de restauraciones de: {obra.titulo}")
         # Ordenamos por la fecha de inicio (antigüedad)
         historial_ordenado = sorted(obra.historial_restauraciones, key=lambda x: x['inicio'])
         for res in historial_ordenado:
@@ -47,7 +47,7 @@ class GestionMuseo:
         return sum(obra.valor for obra in self.obras)
     
     def consultar_obras_por_sala(self, sala: str) -> None:
-        print(f"\n🖥️ MONITOR VESTÍBULO - SALA: {sala}")
+        print(f"\n MONITOR VESTÍBULO - SALA: {sala}")
         # Simulamos que filtramos por sala (usando el periodo como sala)
         obras_sala = [o for o in self.obras if o.periodo == sala and o.estado == "Expuesta"]
         if obras_sala:
