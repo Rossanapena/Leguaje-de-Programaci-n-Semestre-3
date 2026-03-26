@@ -9,9 +9,8 @@ class ObraArte:
         self.valor: float = valor
         self.fecha_entrada: datetime = datetime.now()
         self.fecha_creacion: str = fecha_creacion
-        self.estado: str = "Expuesta"  # 'Expuesta', 'Restauración', 'Cedida'
+        self.estado: str = "Expuesta"
         
-        # Guardamos: {'tipo': str, 'inicio': datetime, 'fin': Optional[datetime]}
         self.historial_restauraciones: List[Dict[str, Any]] = []
 
 class Cuadro(ObraArte):
