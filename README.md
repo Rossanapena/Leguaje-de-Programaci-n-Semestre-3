@@ -36,25 +36,7 @@ El sistema se divide en entidades que representan el núcleo del negocio de vent
 
 Para este sistema se aplicó el principio de Herencia, donde una clase base define atributos comunes y las subclases especializan el comportamiento.
 
-```mermaid
-classDiagram
-    class ObraArte {
-        +String titulo
-        +String autor
-        +float valor
-        +String estado
-        +enviarARestauracion()
-    }
-    class Cuadro {
-        +String técnica
-        +String estilo
-    }
-    class Escultura {
-        +String material
-        +String estilo
-    }
-    ObraArte <|-- Cuadro
-    ObraArte <|-- Escultura
+enlace: https://mermaid.live/edit#pako:eNqNUctOwzAQ_JVoTyDSKmkSHFlcqsIZCW4olyV2UwvHrjZ2BZR-EN_Bj-GmD6UiB_bkmfXOjHa3UFshgUNlao1dd6-wIWwrE4XqmejxlXBOTkbbA7uvm2dHyjSRU85r-5dH7ywN6KW26KIN6gv2-Fl2DsVQRJqNQpo_7RuesFbWXF0f-rthsoVHQXY01893bVSNo2bqlPhC7KGrvXbBbkyvRSdJof6X3nlhd1-TyTHkWOfsCDE0pARwR17G0EpqcQ-hT1KBW8lWVsDDUyC9VeFYuzCzRvNibXsaI-ubFfAl6i4gvxYh8_GcZ5akEZIW1hsHPL3tNYBv4R14xvJpnmR5XhSMsbRIihg-gOfltExnxSzLWJnkLGXFLobP3jaZlgH9ApbgsPU
 
 ### 3.2. Gestión de Seguridad y Roles
 
