@@ -1,3 +1,4 @@
+import uuid
 from typing import List, Tuple
 
 class Producto:
@@ -12,6 +13,7 @@ class Producto:
 
 class OrdenCompra:
     def __init__(self, cliente_id: str, productos: List[Tuple[Producto, int]]):
+        self.id: str = str(uuid.uuid4())[:8] # ID corto de 8 caracteres
         self.cliente_id: str = cliente_id
         self.productos: List[Tuple[Producto, int]] = productos
         self.estado: str = "Confirmada"
@@ -23,4 +25,4 @@ class Envio:
         self.estado: str = "En camino"
 
     def __str__(self) -> str:
-        return f"Envío de orden de {self.orden.cliente_id} vía {self.transporte} ({self.estado})"
+        return f"Envío de orden {self.orden.id} vía {self.transporte} ({self.estado})"
