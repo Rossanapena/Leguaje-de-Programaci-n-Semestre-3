@@ -1,48 +1,48 @@
 # Documentación Técnica
 
-**Sistema de Gestión Museográfica en Java**
+**Sistema de TeleVentas en Java**
 
 ---
 
 ## 1. Introducción
 
-Este sistema modela la gestión de obras de arte en un museo utilizando **Programación Orientada a Objetos en Java**.
+Este proyecto implementa un sistema de ventas utilizando **Programación Orientada a Objetos en Java**.
 
-Se implementan conceptos clave como:
+Se aplican conceptos fundamentales como:
 
-* Generalización
-* Especialización
-* Jerarquía de clases
+* Encapsulamiento
+* Herencia
 * Polimorfismo
+* Relaciones entre clases
 
 ---
 
 ## 2. Descripción del sistema
 
-El sistema permite representar diferentes tipos de obras de arte, manteniendo una estructura jerárquica basada en una clase general.
+El sistema permite gestionar el proceso de venta de productos, incluyendo la interacción entre clientes, productos y métodos de pago.
 
 ---
 
-## 3. Modelo de clases
+## 3. Clases principales
 
-* **Obra (clase base)**: contiene atributos comunes.
-* **Pintura**: hereda de Obra e incluye técnica.
-* **Escultura**: hereda de Obra e incluye material.
+* **Cliente**: representa al cliente del sistema.
+* **Producto**: contiene información del producto como nombre y precio.
+* **Venta**: gestiona la relación entre cliente, producto y cantidad.
+* **Pago (clase abstracta)**: define el comportamiento general del pago.
+* **PagoTarjeta**: implementación específica del pago mediante tarjeta.
 
 ---
 
 ## 4. Funcionalidades
 
-* Registro de obras
-* Clasificación por tipo
-* Visualización de información
-* Uso de herencia para reutilización de código
+* Cálculo del total de la venta
+* Procesamiento del pago
+* Visualización de la información de la compra
 
 ---
 
 ## 5. Diagrama UML
 
-Puedes visualizar el diagrama UML en el siguiente enlace:
 
 https://mermaid.ai/app/projects/624e1028-269b-4cef-b26b-1961c8b1e276/diagrams/2fdfca60-4bf5-411c-9ae0-2fae227c4d2e/version/v0.1/edit
 
@@ -50,25 +50,25 @@ https://mermaid.ai/app/projects/624e1028-269b-4cef-b26b-1961c8b1e276/diagrams/2f
 
 ## 6. Conceptos aplicados
 
-* **Generalización** → Clase `Obra`
-* **Especialización** → `Pintura` y `Escultura`
-* **Polimorfismo** → método `mostrarInfo()`
+* **Encapsulamiento** → uso de atributos privados
+* **Herencia** → `Pago` → `PagoTarjeta`
+* **Polimorfismo** → método `procesarPago()`
 
 ---
 
 ## 7. Implementación
 
 * Lenguaje: Java
-* Uso de herencia (`extends`)
-* Sobrescritura de métodos (`@Override`)
+* Uso de clases separadas
+* Aplicación de principios de POO
 
 ---
 
 ## 8. Ejecución
 
-Ejecutar:
+Ejecutar la clase principal:
 
-```bash
+```bash id="l2u6kg"
 java Main
 ```
 
@@ -76,4 +76,5 @@ java Main
 
 ## 9. Conclusión
 
-Este ejercicio permitió evidenciar la jerarquía de clases y la reutilización de código mediante herencia, cumpliendo con los principios fundamentales de la POO.
+Este ejercicio permitió aplicar correctamente los conceptos de programación orientada a objetos, evidenciando una estructura clara, modular y reutilizable del sistema.
+
