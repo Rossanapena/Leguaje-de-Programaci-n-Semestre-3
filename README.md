@@ -32,7 +32,7 @@ Sistema encargado de gestionar pedidos, productos y envíos dentro de un entorno
 
 ### 2.4 Diagrama UML
 
-https://mermaid.live/edit#LINK_TELEVENTAS
+[https://mermaid.live/edit#LINK_TELEVENTAS](https://mermaid.ai/app/projects/624e1028-269b-4cef-b26b-1961c8b1e276/diagrams/2fdfca60-4bf5-411c-9ae0-2fae227c4d2e/version/v0.1/edit)
 
 ---
 
