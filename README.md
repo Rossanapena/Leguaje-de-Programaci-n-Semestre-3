@@ -63,7 +63,7 @@ Sistema para administrar piezas de un museo utilizando herencia entre clases.
 
 ### 3.5 Diagrama UML
 
-https://mermaid.live/edit#LINK_MUSEO
+[https://mermaid.live/edit#LINK_MUSEO](https://mermaid.live/edit#pako:eNplkE1PxCAQhv9KM-duU2jrFuJNvXs2XCYFd4kFNnwkurX_XVrtVuOF8AzvPDNhgsFJBRyGEUN41HjyaIRdqXjW6orFJGxRRB3T6HgRol8QU3R-J6vzk7ZxARUiyi05C7vLbEx-06nB6gH_p57CkMY9ZzAqr3H8Hfze6v7zcNicf2o3A5Rw8loCjz6pEozyBheE1SwgnpVRAni-SvRvArI_91zQvjhntjbv0ukM_BXHkCldZN7o55tuVa-sVP7BJRuBk251AJ_gPRMlFaFN35OadE1DSF_CB_CWVW3fsjvKOtowwvq5hOs6ta6Obduz-khr1rF80PkLU1OKgg)
 
 ---
 
