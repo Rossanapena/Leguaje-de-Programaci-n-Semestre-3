@@ -42,7 +42,6 @@ El sistema permite representar diferentes tipos de obras de arte, manteniendo un
 
 ## 5. Diagrama UML
 
-Puedes visualizar el diagrama UML en el siguiente enlace:
 
 https://mermaid.ai/app/projects/624e1028-269b-4cef-b26b-1961c8b1e276/diagrams/2fdfca60-4bf5-411c-9ae0-2fae227c4d2e/version/v0.1/edit
 
