@@ -1,0 +1,14 @@
+[
+    {
+        "type": "Car",
+        "carbon_footprint": 46.0
+    },
+    {
+        "type": "Building",
+        "carbon_footprint": 50.0
+    },
+    {
+        "type": "Bicycle",
+        "carbon_footprint": 0
+    }
+]
