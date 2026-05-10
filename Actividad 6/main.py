@@ -1,6 +1,14 @@
 from car import Car
+from building import Building
+from bicycle import Bicycle
 
-car1 = Car(20)
+objects = [
+    Car(20),
+    Building(100),
+    Bicycle(15)
+]
 
-print("Carbon Footprint del carro:")
-print(car1.get_carbon_footprint())  
+for obj in objects:
+    print(type(obj).__name__)
+    print("Carbon Footprint:", obj.get_carbon_footprint())
+    print("-------------------")
