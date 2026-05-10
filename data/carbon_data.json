@@ -1,0 +1,14 @@
+[
+  {
+    "description": "Building: Office Building | Carbon Footprint: 250.0",
+    "carbonFootprint": 250.0
+  },
+  {
+    "description": "Car: Toyota Corolla | Carbon Footprint: 276.0",
+    "carbonFootprint": 276.0
+  },
+  {
+    "description": "Bicycle: Mountain Bike | Carbon Footprint: 2.5",
+    "carbonFootprint": 2.5
+  }
+]
