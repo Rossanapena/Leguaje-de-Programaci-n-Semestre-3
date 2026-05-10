@@ -17,7 +17,7 @@ public class CarbonFootprintTest {
 
         System.out.println(
             "Car Test: " +
-            (car.getCarbonFootprint() == 115.0 ? "PASSED" : "FAILED")
+            (Math.abs(car.getCarbonFootprint() - 115.0) < 0.01 ? "PASSED" : "FAILED")
         );
 
         System.out.println(
